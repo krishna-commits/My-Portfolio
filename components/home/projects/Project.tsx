@@ -53,19 +53,24 @@ export const Project = ({
         animate={controls}
         transition={{ duration: 0.75 }}
       >
-        <div
+      {
+          imgSrc !== null &&
+          <div
           onClick={() => setIsOpen(true)}
           className={styles.projectImage}
         >
           <Image
-            src={imgSrc}
-            quality={60}
-            height={200}
-            style={{ maxWidth: '100%', height: 'auto' }}
-            width={630}
-            alt={`An image of the ${title} project.`}
-          />
-        </div>
+          src={imgSrc}
+          quality={60}
+          height={200}
+          style={{ maxWidth: '100%', height: 'auto' }}
+          width={630}
+          alt={`An image of the ${title} project.`}
+        />
+              </div>
+        }
+         
+  
         <div className={styles.projectCopy}>
           <Reveal width="100%">
             <div className={styles.projectTitle}>

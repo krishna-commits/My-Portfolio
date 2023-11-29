@@ -13,6 +13,7 @@ import { CiVault } from "react-icons/ci";
 import { IoChatboxEllipsesSharp } from "react-icons/io5";
 
 
+
 const SkillCategory = ({ title, children }) => (
   <motion.div
     className={styles.skillCategory}
@@ -30,7 +31,7 @@ const SkillCategory = ({ title, children }) => (
         <FaDocker size="2.4rem" color="var(--brand)" />
       }
         {
-        title === "CI/Cd Code Repository" &&
+        title === "CI/CD Code Repository" &&
         <IoInfiniteSharp size="2.4rem" color="var(--brand)" />
       }
          {
@@ -104,7 +105,7 @@ export const Stats = () => {
             <Skill name="Azure Container Apps" />
           </SkillCategory>
 
-          <SkillCategory title="CI/Cd Code Repository">
+          <SkillCategory title="CI/CD Code Repository">
             <Skill name="Github Action" />
             <Skill name="Jenkins" />
             <Skill name="Gitlab Pipelines" />

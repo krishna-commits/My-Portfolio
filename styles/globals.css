@@ -1,12 +1,13 @@
 :root {
   font-size: 62.5%;
 
-  --background: rgb(17, 17, 17);
-  --bg-opaque: rgb(17, 17, 17, 0.25);
+  /* --background: rgb(37,150,190); */
+  --background: #e0e9ed;
+  --bg-opaque: rgba(101, 101, 99, 0.25);
   --background-light: rgb(35, 35, 35);
   --background-dark: rgb(8, 8, 8);
 
-  --text: rgb(235, 236, 243);
+  --text: rgb(255, 255, 255);
   --brand: rgb(255, 0, 0);
 
   --text-xs: 1.6rem;
@@ -27,6 +28,7 @@
 
 *::selection {
   background: var(--brand);
+  /* color: '#2596be', */
   color: #fff;
 }
 

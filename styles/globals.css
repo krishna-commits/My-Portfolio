@@ -2,12 +2,12 @@
   font-size: 62.5%;
 
   /* --background: rgb(37,150,190); */
-  --background: #e0e9ed;
-  --bg-opaque: rgba(101, 101, 99, 0.25);
-  --background-light: rgb(35, 35, 35);
-  --background-dark: rgb(8, 8, 8);
+  --background: #f5e5e500;
+  --bg-opaque: rgba(255, 255, 255, 0);
+  --background-light: rgba(248, 248, 248, 0);
+  --background-dark: rgb(255, 254, 254);
 
-  --text: rgb(255, 255, 255);
+  --text: rgb(37, 150, 216);
   --brand: rgb(255, 0, 0);
 
   --text-xs: 1.6rem;
@@ -29,7 +29,7 @@
 *::selection {
   background: var(--brand);
   /* color: '#2596be', */
-  color: #fff;
+  color: #0c0000;
 }
 
 html,

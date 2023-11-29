@@ -1,0 +1,21 @@
+.links {
+  display: flex;
+  gap: 1.6rem;
+  flex-wrap: wrap;
+  padding-top: 10px;
+  position: absolute;
+  right: 0px;
+  padding-right: 4%;
+
+  a {
+    opacity: 0.5;
+    position: relative;
+    z-index: 20;
+  }
+
+  a:hover {
+    color: var(--brand);
+    opacity: 1;
+  }
+}
+

@@ -1,0 +1,22 @@
+.scroll{
+    background: var(--background-light);
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 60px;
+    right: 40px;
+    z-index: 100;
+    position: fixed;
+    cursor: pointer;
+    border-radius: 1rem;
+    transition: .3s all ease-in-out;
+    outline: none;
+    border: none;
+    svg{
+        color: var(--brand);
+        font-size: 30px;
+    }
+    &:hover{
+        transform: translateY(-30px);
+    }
+}

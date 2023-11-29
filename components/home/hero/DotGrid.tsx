@@ -29,13 +29,12 @@ export const DotGrid = () => {
   };
 
   useEffect(() => {
-    animateDots(0); // Start animation from the first dot by default
+    animateDots(0);
   }, []);
 
   const handleDotClick = (e) => {
     const startIndex = parseInt(e.target.dataset.index);
     animateDots(startIndex);
-    // Your click handler code here
   };
 
   const dots = [];

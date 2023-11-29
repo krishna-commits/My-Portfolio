@@ -19,14 +19,7 @@ export const Home = () => {
           <Projects />
           <Contact />
           <ScrollTop />
-          <div
-            style={{
-              height: "100px",
-              background:
-                "linear-gradient(180deg, var(--background), var(--background-light))",
-            }}
-          >
-          </div>
+       
         </main>
       </div>
     </>

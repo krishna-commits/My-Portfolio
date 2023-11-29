@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import styles from "./sidebar.module.scss";
 import { motion } from "framer-motion";
-
+import Image from "next/image";
 export const SideBar = () => {
   const [selected, setSelected] = useState("");
 
@@ -33,7 +33,13 @@ export const SideBar = () => {
       className={styles.sideBar}
     >
       <span className={styles.logo}>
-        K<span>.</span>
+
+      <Image
+        src="/project-imgs/krishnalogo.png"
+        width={45}
+        height={45}
+        alt="Picture of the author"
+      />
       </span>
       <motion.a
         initial={{ x: -70 }}

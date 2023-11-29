@@ -15,7 +15,7 @@ export const Hero = () => {
         <Reveal>
           <h2 className={styles.subTitle}>
             I&apos;m a <span><ReactTypingEffect
-              text={["DevSecOps Engineer.", "Cybersecurity.", "DevOps Enthusiast."]}
+              text={["DevSecOps Engineer.", "DevOps Enthusiast.", "Cybersecurity Learner."]}
               speed={40}
               eraseSpeed={40}
               eraseDelay={900}
@@ -25,9 +25,9 @@ export const Hero = () => {
         </Reveal>
         <Reveal>
           <p className={styles.aboutCopy}>
-            Welcome To My Portfolio site🎨
+            Welcome To My Portfolio site
             <br />
-            Let&apos;s connect!
+            Let&apos;s connect !!!
           </p>
         </Reveal>
         <Reveal>

@@ -1,6 +1,5 @@
 import styles from "./headinglinks.module.scss";
 import { FaGithub, FaResearchgate, FaMedium, FaLinkedin, FaInstagram } from "react-icons/fa";
-// import { BsLinkedin  } from "react-icons/bs"
 import Link from "next/link";
 import { motion } from "framer-motion";
 

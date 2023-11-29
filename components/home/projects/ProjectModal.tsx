@@ -87,6 +87,5 @@ export const ProjectModal = ({
 
   if (!isOpen) return <></>;
 
-  // @ts-ignore
   return ReactDOM.createPortal(content, document.getElementById("root"));
 };

@@ -1,10 +1,8 @@
 
 import { motion } from 'framer-motion';
-import { AiFillCode } from 'react-icons/ai';
 import styles from "./stats.module.scss";
 import { IoCloud } from "react-icons/io5";
 import { Reveal } from "@/components/utils/Reveal";
-// import { GoContainer } from "react-icons/go";
 import { FaDocker } from "react-icons/fa";
 import { IoInfiniteSharp } from "react-icons/io5";
 import { BsCodeSlash } from "react-icons/bs";
@@ -13,10 +11,6 @@ import { FaDatabase } from "react-icons/fa";
 import { SiTerraform } from "react-icons/si";
 import { CiVault } from "react-icons/ci";
 import { IoChatboxEllipsesSharp } from "react-icons/io5";
-
-
-
-
 
 
 const SkillCategory = ({ title, children }) => (

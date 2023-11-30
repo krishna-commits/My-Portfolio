@@ -10,7 +10,7 @@ export default function home() {
         <meta name="description" content="I am a Devops Engineer With 7 years Experienced " />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/krishnalogo.ico" />
-        <div className="container">
+        {/* <div className="container">
           <Script src="https://www.googletagmanager.com/gtag/js?id=G-KNH33H1VPP" />
           <Script id="google-analytics">
             {`
@@ -21,7 +21,7 @@ export default function home() {
               gtag('config', 'G-KNH33H1VPP');
             `}
           </Script>
-        </div>
+        </div> */}
       </Head>
       <Home />
     </>

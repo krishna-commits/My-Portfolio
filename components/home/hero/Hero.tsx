@@ -3,6 +3,8 @@ import { DotGrid } from "./DotGrid";
 import styles from "./hero.module.scss";
 import { OutlineButton } from "../../buttons/OutlineButton";
 import ReactTypingEffect from 'react-typing-effect';
+import Image from "next/image";
+
 export const Hero = () => {
   return (
     <section className={`section-wrapper ${styles.hero}`}>
@@ -32,12 +34,14 @@ export const Hero = () => {
         </Reveal>
         <Reveal>
           <OutlineButton
+          
             onClick={() => document.getElementById("contact")?.scrollIntoView()}
           >
             Contact me
           </OutlineButton>
         </Reveal>
       </div>
+    
       <DotGrid />
     </section>
   );

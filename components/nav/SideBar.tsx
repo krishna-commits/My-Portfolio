@@ -32,15 +32,16 @@ export const SideBar = () => {
       transition={{ duration: 0.5 }}
       className={styles.sideBar}
     >
-      <span className={styles.logo}>
+      <div className={styles.logo}>
 
       <Image
-        src="/project-imgs/krishnalogo.png"
-        width={45}
-        height={45}
-        alt="Picture of the author"
+        className="logo-krishna"
+          src="/project-imgs/krishnalogo.png"
+          width={45}
+          height={45}
+          alt="Picture of the author"
       />
-      </span>
+      </div>
       <motion.a
         initial={{ x: -70 }}
         animate={{ x: 0 }}

@@ -9,6 +9,7 @@
 
   --text: rgb(37, 150, 216);
   --brand: rgb(255, 0, 0);
+  --chip:rgb(37, 150, 216);
 
   --text-xs: 1.6rem;
   --text-sm: 1.8rem;
@@ -82,7 +83,18 @@ input[type=number] {
 
 .chip {
   font-size: var(--text-xs);
-  background: var(--background-light);
+  background: var(--chip);
+  color:aliceblue;
   padding: 0.2rem 0.8rem;
   border-radius: 999px;
+}
+
+
+.chip:hover {
+  font-size: var(--text-xs);
+  background: var(--brand);
+  color:aliceblue;
+  padding: 0.2rem 0.8rem;
+  cursor: pointer;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.);
 }

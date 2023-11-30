@@ -25,7 +25,7 @@
 
     writing-mode: vertical-lr;
     font-size: var(--text-sm);
-    font-weight: 200;
+    font-weight: 500;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,14 +38,14 @@
   }
 
   a:hover {
-    background: var(--background);
-    border-right: 1px solid var(--brand);
+    background: var(--brand);
+    border-right: 3px solid var(--text);
     opacity: 1;
   }
 
   .selected {
-    background: var(--background);
-    border-right: 1px solid var(--brand);
+    background: var(--brand);
+    border-right: 3px solid var(--text);
     opacity: 1;
   }
 }
@@ -64,16 +64,21 @@
   align-items: center;
   justify-content: center;
 
-  background: var(--background);
-  border-radius: 4px;
+  background: var(--brand);
+  border-radius: 100px ;
 
   margin: 1.8rem 0;
+  border-radius: 100px ;
 
-  span {
+  div {
     font-size: var(--text-md);
     font-weight: 900;
     line-height: 1;
     color: var(--brand);
+
+  }
+  .logo-krishna{
+    border-radius: 50%;
   }
 }
 

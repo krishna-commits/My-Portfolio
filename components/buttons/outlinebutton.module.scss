@@ -2,12 +2,11 @@
   outline: none;
   border: none;
   cursor: pointer;
-
   padding: 1.2rem 2.4rem;
 
-  border: 1px solid var(--brand);
+  border: 3px solid var(--brand);
   background: transparent;
-  color: var(--brand);
+  color: inherit;
   font-size: var(--text-sm);
   border-radius: 4px;
 

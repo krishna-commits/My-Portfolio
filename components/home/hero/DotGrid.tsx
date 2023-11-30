@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import styles from "./dotgrid.module.scss";
 import anime from "animejs";
+import Image from "next/image";
 
 export const DotGrid = () => {
   const GRID_WIDTH = 25;
@@ -62,6 +63,22 @@ export const DotGrid = () => {
       style={{ gridTemplateColumns: `repeat(${GRID_WIDTH}, 1fr)` }}
       className={styles.dotGrid}
     >
+       {/* <Image
+          className={styles.modalImage}
+          src={imgSrc}
+          height={300}
+          width={660}
+          style={{ maxWidth: '100%', height: 'auto' }}
+          alt={`An image of the ${title} project.`}
+        /> */}
+        
+      {/* <Image
+        src="/project-imgs/Profile.png"
+        width={700}
+        height={700}
+        alt="Picture of the author"
+
+      /> */}
       {dots.map((dot) => dot)}
     </div>
   );

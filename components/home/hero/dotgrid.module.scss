@@ -16,10 +16,10 @@
 }
 
 .dot {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
-  background: linear-gradient(180deg, var(--background), var(--text));
+  background: linear-gradient(180deg, var(--background), var(--brand));
   opacity: 0.35;
 }
 

@@ -11,14 +11,14 @@ export default function home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/krishnalogo.ico" />
         <div className="container">
-          <Script src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID" />
+          <Script src="https://www.googletagmanager.com/gtag/js?id=G-KNH33H1VPP" />
           <Script id="google-analytics">
             {`
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
     
-              gtag('config', 'GA_MEASUREMENT_ID');
+              gtag('config', 'G-KNH33H1VPP');
             `}
           </Script>
         </div>

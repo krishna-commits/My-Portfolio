@@ -20,9 +20,9 @@ export const Contact = () => {
           <Reveal width="100%">
             <p className={styles.contactCopy}>
               <span style={{ paddingRight: 5 }}>
-                Shoot me an email if you want to connect! You can also find me
-                on
+                Shoot me an email if you want to connect! You can also find me on
               </span>
+              <br />
               <Link
                 href="https://medium.com/@neupane.krishna33"
                 target="_blank"
@@ -30,7 +30,7 @@ export const Contact = () => {
               >
                 Medium
               </Link>{" "}
-              or{" "}
+              | {" "}
               <Link
                 style={{ paddingRight: 5 }}
                 href="https://www.linkedin.com/in/krishna-neupane-50082091/"
@@ -39,13 +39,13 @@ export const Contact = () => {
               >
                 Linkedin
               </Link>
-              or {""}
+              | {""}
               <Link
                 href="https://www.instagram.com/makeajourneywithkrishna/"
                 target="_blank"
                 rel="nofollow"
               >
-                Instagram
+              Instagram
               </Link>
             </p>
           </Reveal>

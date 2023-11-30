@@ -115,7 +115,7 @@ export const Stats = () => {
           </SkillCategory>
 
           <SkillCategory title="Scripting">
-            <Skill name="Pyhon" />
+            <Skill name="Python" />
             <Skill name="Bash" />
           </SkillCategory>
 

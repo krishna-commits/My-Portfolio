@@ -27,9 +27,9 @@ export const Hero = () => {
         </Reveal>
         <Reveal>
           <p className={styles.aboutCopy}>
-            Welcome To My Portfolio site
+            Welcome To My Portfolio Site
             <br />
-            Let&apos;s connect !!!
+            Let&apos;s Connect !!!
           </p>
         </Reveal>
         <Reveal>

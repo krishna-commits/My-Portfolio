@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Kanit:wght@300&family=Lato&family=Pacifico&family=Permanent+Marker&display=swap');
+
 :root {
   font-size: 62.5%;
 
@@ -7,11 +9,16 @@
   --background-light: rgba(248, 248, 248, 0);
   --background-dark: rgb(255, 254, 254);
 
-  --text: rgb(37, 150, 216);
-  --brand: rgb(255, 0, 0);
+  /* --text: rgb(2, 30, 100); */
+  /* --text: #201b4c;
+  --brand: #419cbb;
+  --chip:rgb(37, 150, 216); */
+  --text: #355c7d;
+  --brand: #ff7582;
+  --red:rgb(255, 9, 34);
   --chip:rgb(37, 150, 216);
 
-  --text-xs: 1.6rem;
+  --text-xs: 1.8rem;
   --text-sm: 1.8rem;
   --text-md: 2.2rem;
   --text-lg: 3.6rem;
@@ -25,12 +32,20 @@
   margin: 0;
   list-style-type: none;
   -webkit-tap-highlight-color: transparent;
+  /* font-family: 'Nova Square', sans-serif !important; */
+  /* font-family: 'Lato', sans-serif; 
+  
+  /* font-family: 'Kanit', sans-serif; */
+  font-family: 'Fira Sans', sans-serif;
+
+
+
 }
 
 *::selection {
   background: var(--brand);
   /* color: '#2596be', */
-  color: #0c0000;
+  color: rgb(28, 14, 14);
 }
 
 html,
@@ -38,6 +53,7 @@ body {
   max-width: 100vw;
   scroll-behavior: smooth;
   font-size: var(--text-sm);
+  /* font-family: 'Roboto', sans-serif; */
 }
 
 body {

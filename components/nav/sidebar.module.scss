@@ -25,11 +25,11 @@
 
     writing-mode: vertical-lr;
     font-size: var(--text-sm);
-    font-weight: 500;
+    font-weight: 600;
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: 0.5;
+    opacity: 0.9;
 
     border-right: 1px solid transparent;
 
@@ -64,7 +64,7 @@
   align-items: center;
   justify-content: center;
 
-  background: var(--brand);
+  background: var(--red);
   border-radius: 100px ;
 
   margin: 1.8rem 0;

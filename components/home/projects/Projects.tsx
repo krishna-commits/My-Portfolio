@@ -19,7 +19,7 @@ export const Projects = () => {
 const projects = [
   {
     title: "Continuous Automation with DevOps practices for Threat Detection",
-    imgSrc: "/project-imgs/kubernetes-cheatsheet.png",
+    imgSrc: "/project-imgs/3-6-phases-of-the-Software-development-lifecycle-Shifting-left-on-security.jpg",
     code: "",
     projectLink: "https://www.researchgate.net/publication/376238145_Continuous_Automation_with_DevOps_practices_for_Threat_Detection",
     tech: ["DevOps", "Python", "Bitbucket", "Kubernetes", "AWS CLoud", "Docker"],

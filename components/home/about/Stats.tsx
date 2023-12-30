@@ -1,4 +1,4 @@
-
+'use client'
 import { motion } from 'framer-motion';
 import styles from "./stats.module.scss";
 import { IoCloud } from "react-icons/io5";
@@ -71,6 +71,7 @@ const SkillCategory = ({ title, children }) => (
 
 const Skill = ({ name }) => (
   <motion.span
+    onMouseEnter={()=>{console.log('hovered')}}
     className="chip"
     initial={{ opacity: 0, y: -10 }}
     animate={{ opacity: 1, y: 0 }}

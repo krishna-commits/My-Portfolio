@@ -11,7 +11,7 @@ export const About = () => {
         <div>
           <Reveal>
             <p className={`${styles.aboutText}`}>
-              <span>DevSecOps</span>Experience in system, network and security. Interested in solving technical blockers, troubleshooting systems, understanding complex systems to simplify, automating tasks, fostering team, and their capabilities. Have a habit of challenging the problem until it cracks. Collaborate with teams to set up infrastructure needs like automation, scaling, load-balancing, and containers. Gives equal importance to life as to work. Driven individual with the ability to adapt to any situation and a proven potential to grow self and others.
+              <span></span>Results-driven DevSecOps professional with a robust background in system and network administration. I am enthusiastic about addressing complex technical challenges, automating tasks, and fostering collaborative team dynamics. My unwavering commitment to problem-solving extends to contributing valuable insights to the data security and privacy landscape. With a focus on identifying and mitigating digital assets, securing information systems, and enhancing overall cybersecurity measures, I am eager to excel as a dedicated, research-oriented professional in the field.
             </p>
           </Reveal>
         </div>

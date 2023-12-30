@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Kanit:wght@300&family=Lato&family=Pacifico&family=Permanent+Marker&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Kanit:wght@300&family=Lato&family=Pacifico&family=Permanent+Marker&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Fira+sans&family=Kanit:wght@300&family=Lato&family=Pacifico&family=Permanent+Marker&display=swap');
+
 
 :root {
   font-size: 62.5%;
@@ -13,13 +15,14 @@
   /* --text: #201b4c;
   --brand: #419cbb;
   --chip:rgb(37, 150, 216); */
-  --text: #355c7d;
-  --brand: #ff7582;
+  --text: #093270;
+  --brand: #a51414;
+  --green: #349972;
   --red:rgb(255, 9, 34);
   --chip:rgb(37, 150, 216);
 
-  --text-xs: 1.8rem;
-  --text-sm: 1.8rem;
+  --text-xs: 2.0rem;
+  --text-sm: 2.0rem;
   --text-md: 2.2rem;
   --text-lg: 3.6rem;
   --text-xl: 5.6rem;
@@ -43,9 +46,9 @@
 }
 
 *::selection {
-  background: var(--brand);
+  /* background: var(--brand); */
   /* color: '#2596be', */
-  color: rgb(28, 14, 14);
+  /* color: rgb(28, 14, 14); */
 }
 
 html,

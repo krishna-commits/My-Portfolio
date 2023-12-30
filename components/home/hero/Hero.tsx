@@ -27,7 +27,7 @@ export const Hero = () => {
         </Reveal>
         <Reveal>
           <p className={styles.aboutCopy}>
-            Welcome To My Portfolio Site
+            {/* Welcome To My Portfolio Site */}
             <br />
             Let&apos;s Connect !!!
             <br />
@@ -38,6 +38,7 @@ export const Hero = () => {
      target="orcid.widget"
      rel="me noopener noreferrer"
      >
+      <br />
      <img
         src="https://orcid.org/sites/default/files/images/orcid_16x16.png"
         alt="ORCID iD icon"/>

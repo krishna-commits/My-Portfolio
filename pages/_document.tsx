@@ -1,4 +1,4 @@
-import { Html, Head, Main, NextScript } from "next/document";
+import { Head, Main, NextScript } from "next/document";
 
 export default function Document() {
   const googleTag = `
@@ -14,7 +14,7 @@ export default function Document() {
           })(window, document, "clarity", "script", "jyzxip5knt");`
 
             return (
-              <Html lang="en">
+              <html lang="en" suppressHydrationWarning>
 
       <Head />
       <body>
@@ -24,6 +24,6 @@ export default function Document() {
         <script async dangerouslySetInnerHTML={{ __html: googleTag }} />
         <script async dangerouslySetInnerHTML={{ __html: clarity }} />
       </body>
-    </Html>
+    </html>
   );
 }

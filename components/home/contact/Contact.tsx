@@ -5,6 +5,7 @@ import Link from "next/link";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { FaPhoneAlt } from "react-icons/fa";
+import { useState } from 'react';
 
 export const Contact = () => {
   return (
@@ -20,7 +21,7 @@ export const Contact = () => {
           <Reveal width="100%">
             <p className={styles.contactCopy}>
               <span style={{ paddingRight: 5 }}>
-                Shoot me an email if you want to connect! You can also find me on
+                If you want to connect! You can also find me on
               </span>
               <br />
               <Link
@@ -57,14 +58,14 @@ export const Contact = () => {
               </div>
             </Link>
           </Reveal>
-          <div style={{ marginTop: "4rem" }}>
+          {/* <div style={{ marginTop: "4rem" }}>
             <Reveal width="100%">
               <div className={styles.contactPhone}>
                 <FaPhoneAlt size="2rem" />
                 <span>+977-9847263316</span>
               </div>
             </Reveal>
-          </div>
+          </div> */}
         </div>
       </section>
     </>

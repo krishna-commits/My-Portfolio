@@ -38,13 +38,13 @@
   }
 
   a:hover {
-    background: var(--brand);
+    background: var(--green);
     border-right: 3px solid var(--text);
     opacity: 1;
   }
 
   .selected {
-    background: var(--brand);
+    background: var(--green);
     border-right: 3px solid var(--text);
     opacity: 1;
   }

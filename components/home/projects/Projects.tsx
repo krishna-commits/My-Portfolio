@@ -52,7 +52,7 @@ const projects = [
   {
     title: "centralize logs with rsyslog logstash elasticsearch and kibana",
     imgSrc: "/project-imgs/centrilized .png",
-    // code: "https://github.com/krishna-commits/automation-bitbucket-to-kubernetes-deployment",
+    code: "https://project.neupanekrishna.com.np/how-to-centralize-logs-with-rsyslog-logstash-elasticsearch-and-kibana-on-ubuntu-2004",
     projectLink: "https://project.neupanekrishna.com.np/how-to-centralize-logs-with-rsyslog-logstash-elasticsearch-and-kibana-on-ubuntu-2004",
     tech: ["Centralize", "logs", "rsyslog", "logstash", "elasticsearch", "kibana", "ubuntu 20.04"],
     description:

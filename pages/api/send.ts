@@ -7,17 +7,17 @@ const resend = new Resend('re_C9BeaK7X_2dTLr4b1juLDDgtbPpq6XqcN');
 export default async (req: NextApiRequest, res: NextApiResponse) => {
   try {
     // Make sure the request has a valid JSON body
-    const { name } = req.body;
+    const { name, email, message, phone } = req.body;
 
     if (!name) {
       return res.status(400).json({ error: 'Name is required in the request body' });
     }
 
     const { data, error } = await resend.emails.send({
-      from: `${name} <onboarding@neupanekrishna.com.np>`,
+      from: `${name} <portfolio@neupanekrishna.com.np>`,
       to: ['neupanekrishna33@gmail.com'],
-      subject: 'Email Test',
-      react: EmailTemplate({ name }), // Use the extracted name value
+      subject: `${name} has a message!`,
+      react: EmailTemplate({ name, email, message, phone }), // Use the extracted name value
     });
 
     if (error) {

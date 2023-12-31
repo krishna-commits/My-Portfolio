@@ -6,10 +6,10 @@ const resend = new Resend('re_C9BeaK7X_2dTLr4b1juLDDgtbPpq6XqcN');
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
   const { data, error } = await resend.emails.send({
-    from: 'Acme <onboarding@resend.dev>',
+    from: 'Acme <onboarding@neupanekrishna.com.np>',
     to: ['neupanekrishna33@gmail.com'],
     subject: 'Email Test',
-    react: EmailTemplate({ firstName: 'John' }),
+    react: EmailTemplate({ name: 'John' }),
   });
 
   if (error) {

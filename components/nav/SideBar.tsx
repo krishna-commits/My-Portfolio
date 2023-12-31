@@ -2,8 +2,29 @@ import { useEffect, useState } from "react";
 import styles from "./sidebar.module.scss";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useRouter } from 'next/router';
+
+
 export const SideBar = () => {
   const [selected, setSelected] = useState("");
+  const router = useRouter();
+
+  
+  useEffect(() => {
+    // Access the path segments from the URL
+    const pathSegments = router.asPath.split('/');
+
+    // Check if 'projects' is one of the path segments
+    const hasProjectsSegment = pathSegments.includes('projects');
+
+    console.log(router.asPath.split('/'), hasProjectsSegment)
+
+    if (hasProjectsSegment) {
+      console.log('Current project:');
+      setSelected('projects')
+    }
+  }, [router.asPath, router.query.project]);
+
 
   useEffect(() => {
     const sections = document.querySelectorAll(".section-wrapper");

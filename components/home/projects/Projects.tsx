@@ -1,20 +1,41 @@
 import { SectionHeader } from "@/components/utils/SectionHeader";
 import { Project } from "./Project";
 import styles from "./projects.module.scss";
+import { Reveal } from "@/components/utils/Reveal";
+import { OutlineButton } from "@/components/buttons/OutlineButton";
+import Link from "next/link";
 
-export const Projects = () => {
+export const Projects = ({count}) => {
+  const visibleProjects = projects.slice(0, count);
+
   return (
     <section className="section-wrapper" id="projects">
       <SectionHeader title="Projects" dir="r" />
 
       <div className={styles.projects}>
-        {projects.map((project) => {
+        {visibleProjects.map((project) => {
           return <Project key={project.title} {...project} />;
         })}
       </div>
+  {
+    count <= 4 && 
+    <Reveal>
+      <Link href={'/projects/github'}>
+      <OutlineButton
+        onClick={() => console.log('hey')}
+      >
+        View More
+      </OutlineButton>
+      </Link>
+
+    </Reveal>
+  }
+
+  
     </section>
   );
 };
+
 
 const projects = [
   {

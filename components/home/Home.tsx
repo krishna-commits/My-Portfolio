@@ -20,7 +20,7 @@ export const Home = () => {
           <Heading />
           <Hero />
           <About />
-          <Projects />
+          <Projects count={4}/>
           <Contact />
           <ScrollTop />
        

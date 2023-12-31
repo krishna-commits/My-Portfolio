@@ -3,9 +3,13 @@ import { MyLinks } from "./components/MyLinks";
 import { useState, useEffect, useRef } from "react";
 import { AiOutlineClose } from "react-icons/ai"
 import {RiMenuUnfoldLine} from "react-icons/ri"
+import { useRouter } from 'next/router';
+
 export const Heading = () => {
+  const router = useRouter();
+
   const [openMobile, setOpenMobile] = useState(false);
-  const [selected, setSelected] = useState("");
+  const [selected, setSelected] = useState("#about");
   const handleMobileViewOpen = () => {
     setOpenMobile(true);
   };
@@ -25,6 +29,22 @@ export const Heading = () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [toggleref]);
+
+  useEffect(() => {
+    // Your desired path segment
+    const pathnameWithoutSlash = router.pathname.replace(/^\//, ''); // Remove the leading forward slash
+
+    // Check if the current pathname includes the desired path segment
+    if (router.pathname.includes(pathnameWithoutSlash)) {
+      // If yes, set the selected state to the pathname
+      setSelected(pathnameWithoutSlash);
+    } else {
+      // If not, reset the selected state
+      setSelected(null);
+    }
+
+    console.log(pathnameWithoutSlash)
+  }, [router.pathname]);
 
   return (
     <header className={styles.heading}>

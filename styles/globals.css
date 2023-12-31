@@ -96,6 +96,14 @@ input[type=number] {
   padding: 9.6rem;
   overflow: hidden;
 }
+.page-wrapper {
+  position: relative;
+  z-index: 10;
+  max-width: 1150px;
+  margin: auto;
+  /* padding: 9.6rem; */
+  overflow: hidden;
+}
 
 @media (max-width: 768px) {
   .section-wrapper {

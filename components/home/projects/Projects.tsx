@@ -34,6 +34,38 @@ const projects = [
     ),
   },
   {
+    title: "Automatic Bitbucket Pipeline-To-Kubernetes",
+    imgSrc: "/project-imgs/bitbucket-pipeline.png",
+    code: "https://github.com/krishna-commits/automation-bitbucket-to-kubernetes-deployment",
+    projectLink: "https://project.neupanekrishna.com.np/automatic-bitbucket-pipeline-to-kubernetes",
+    tech: ["Automation", "Bitbucket", "bitbucket-pipelines", "Kubernetes", "AWS", "AWS-ECR"],
+    description:
+      "Automating the deployment process from Bitbucket Pipelines to Kubernetes involves setting up a continuous integration/continuous deployment (CI/CD) pipeline.",
+    modalContent: (
+      <>
+        <p>
+        Automating the deployment process from Bitbucket Pipelines to Kubernetes.
+        </p>
+      </>
+    ),
+  },
+  {
+    title: "centralize logs with rsyslog logstash elasticsearch and kibana",
+    imgSrc: "/project-imgs/centrilized .png",
+    // code: "https://github.com/krishna-commits/automation-bitbucket-to-kubernetes-deployment",
+    projectLink: "https://project.neupanekrishna.com.np/how-to-centralize-logs-with-rsyslog-logstash-elasticsearch-and-kibana-on-ubuntu-2004",
+    tech: ["Centralize", "logs", "rsyslog", "logstash", "elasticsearch", "kibana", "ubuntu 20.04"],
+    description:
+      "How to centralize logs with rsyslog logstash elasticsearch and kibana on Ubuntu 20.04",
+    modalContent: (
+      <>
+        <p>
+        How to centralize logs with rsyslog logstash elasticsearch and kibana on Ubuntu 20.04.
+        </p>
+      </>
+    ),
+  },
+  {
     title: "Kubernetes-cheatsheet",
     imgSrc: "/project-imgs/kubernetes-cheatsheet.png",
     code: "https://github.com/krishna-commits/krishna-commits/tree/kubernetes-cheat-sheet",

@@ -1,11 +1,21 @@
 import styles from "./headinglinks.module.scss";
-import { FaGithub, FaResearchgate, FaMedium, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaOrcid, FaGithub, FaResearchgate, FaMedium, FaBlogger, FaLinkedin, FaInstagram } from "react-icons/fa";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
 export const MyLinks = () => {
   return (
     <div className={styles.links}>
+
+      <motion.span
+        initial={{ y: -30, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+      >
+        <Link href="https://orcid.org/0009-0004-7787-1573" target="_blank" rel="nofollow">
+          <FaOrcid size="2.4rem" />
+        </Link>
+      </motion.span>
 
       <motion.span
         initial={{ y: -30, opacity: 0 }}
@@ -51,6 +61,16 @@ export const MyLinks = () => {
       >
         <Link href="https://www.instagram.com/makeajourneywithkrishna" target="_blank" rel="nofollow">
           <FaInstagram size="2.4rem" />
+        </Link>
+      </motion.span>
+
+      <motion.span
+        initial={{ y: -30, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.3 }}
+      >
+        <Link href="https://project.neupanekrishna.com.np/" target="_blank" rel="nofollow">
+          <FaBlogger size="2.4rem" />
         </Link>
       </motion.span>
     </div>

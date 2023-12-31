@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+sans&family=Kanit:wght@300&family=Lato&family=Pacifico&family=Permanent+Marker&display=swap');
 
 
+
 :root {
   font-size: 62.5%;
 
@@ -117,3 +118,6 @@ input[type=number] {
   cursor: pointer;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.);
 }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

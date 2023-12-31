@@ -12,7 +12,9 @@ export default function InnerLayout({
     <SideBar />
     <main>
       <Heading />
-      <Projects />
+      {/* <Projects /> */}
+      <Projects count={4} />
+
     </main>
   </div>
   )

@@ -9,11 +9,13 @@ import GitHubRepos from '@/components/pages/github-projects';
 import MediumPosts from '@/components/pages/medium';
 
 export default function ProjectPage() {
-  const [activeTab, setActiveTab] = useState('github', 'medium'); // Default active tab
+  const [activeTab, setActiveTab] = useState('github');
+  const [activeTab, setActiveTab] = useState('medium'); // Default active tab
 
   const handleTabClick = (tab) => {
     setActiveTab(tab);
   };
+
 
   return (
     <div className={styles.home}>

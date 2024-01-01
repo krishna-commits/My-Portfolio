@@ -4,11 +4,12 @@ import { Heading } from "@/components/nav/Heading";
 import { SideBar } from "@/components/nav/SideBar";
 import { SectionHeader } from "@/components/utils/SectionHeader";
 import styles from 'components/home/home.module.scss';
-import { FaGithub, FaResearchgate } from 'react-icons/fa';
+import { FaGithub, FaMedium, FaResearchgate } from 'react-icons/fa';
 import GitHubRepos from '@/components/pages/github-projects';
+import MediumPosts from '@/components/pages/medium';
 
 export default function ProjectPage() {
-  const [activeTab, setActiveTab] = useState('github'); // Default active tab
+  const [activeTab, setActiveTab] = useState('github', 'medium'); // Default active tab
 
   const handleTabClick = (tab) => {
     setActiveTab(tab);
@@ -69,11 +70,35 @@ export default function ProjectPage() {
                   github
                 </a>
               </li>
+              <li className="me-2">
+                <a
+                  href="#"
+                  onClick={() => handleTabClick('medium')}
+                  className={`inline-flex items-center justify-center p-4 text-blue-600 border-b-2 ${
+                    activeTab === 'medium' ? 'border-blue-600 rounded-t-lg active dark:text-blue-500 dark:border-blue-500 group' : ''
+                  }`}
+                  aria-current={activeTab === 'medium' ? 'page' : undefined}
+                >
+                  <svg
+                    className={`w-10 h-10 me-2 text-blue-600 dark:text-blue-500 ${
+                      activeTab === 'medium' ? '' : 'group-hover:text-blue-500 dark:group-hover:text-blue-300'
+                    }`}
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 18 18"
+                  >
+                <FaMedium size="1.7rem" />
+                  </svg>
+                  medium
+                </a>
+              </li>
             </ul>
           </div>
 
           {/* Render tab content based on activeTab */}
           {activeTab === 'github' && <GitHubRepos />}
+          {activeTab === 'medium' && <MediumPosts />}
           {activeTab === 'researchGate' && <div>Research Gate Content</div>}
         </section>
       </main>

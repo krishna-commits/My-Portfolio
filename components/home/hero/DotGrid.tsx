@@ -73,10 +73,11 @@ export const DotGrid = () => {
         /> */}
         
       {/* <Image
-        src="/project-imgs/Profile.png"
+      className="right-side"
+        src="/project-imgs/laptop.svg"
         width={700}
         height={700}
-        alt="Picture of the author"
+        alt="Picture "
 
       /> */}
       {dots.map((dot) => dot)}

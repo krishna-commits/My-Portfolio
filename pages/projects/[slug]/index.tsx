@@ -10,12 +10,11 @@ import MediumPosts from '@/components/pages/medium';
 
 export default function ProjectPage() {
   const [activeTab, setActiveTab] = useState('github');
-  const [activeTab, setActiveTab] = useState('medium'); // Default active tab
+  const [otherTab, setOtherTab] = useState('medium'); // Use a different name, e.g., 'otherTab'
 
   const handleTabClick = (tab) => {
     setActiveTab(tab);
   };
-
 
   return (
     <div className={styles.home}>
@@ -25,7 +24,6 @@ export default function ProjectPage() {
         <section className="page-wrapper">
           <div className="border-b border-gray-200 dark:border-gray-700">
             <ul className="flex flex-wrap -mb-px text-center">
-        
               <li className="me-2">
                 <a
                   href="#"

@@ -5,7 +5,7 @@ import styles from "./home.module.scss";
 import { Heading } from "../nav/Heading";
 import { About } from "./about/About";
 import { Projects } from "./projects/Projects";
-import { Certificate, Voluntering } from "./Certificate/certificate";
+import { Certificate,} from "./Certificate/certificate";
 import { Contact } from "./contact/Contact";
 import { ScrollTop } from "../buttons/ScrollTop"
 

@@ -86,7 +86,6 @@ export const Contact = () => {
               </Link>
             </p>
           </Reveal>
-
         </div>
       </section>
 
@@ -96,7 +95,7 @@ export const Contact = () => {
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div className="mt-2.5">
             <label htmlFor="your-name" className="block text-md font-semibold leading-6  dark:text-slate-600 mb-5">
-              Your name
+              Your Name
             </label>
             <input
               className="block w-full rounded-md border-0 px-3.5 py-2  shadow-sm ring-1 ring-inset ring-slate-800 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-md sm:leading-6 dark:bg-slate-900  dark:text-slate-300 dark:ring-slate-700 "
@@ -108,7 +107,7 @@ export const Contact = () => {
           </div>
           <div className="mt-2.5">
             <label htmlFor="email" className="block text-md font-semibold leading-6  dark:text-slate-600 mb-5">
-              Email
+              Email Address
             </label>
             <input
               className="block w-full rounded-md border-0 px-3.5 py-2  shadow-sm ring-1 ring-inset ring-slate-800 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-md sm:leading-6 dark:bg-slate-900  dark:text-slate-300 dark:ring-slate-700 "
@@ -121,7 +120,7 @@ export const Contact = () => {
 
           <div className=" space-y-2 col-span-2">
             <label htmlFor="phone-number" className="block text-md font-semibold leading-6  dark:text-slate-600 mb-5">
-              Phone number
+              Phone Number 
             </label>
             <div className="relative mt-2.5">
               <div className="absolute inset-y-0 left-0 flex items-center">
@@ -144,7 +143,7 @@ export const Contact = () => {
           <div className=" space-y-2 col-span-2">
             <textarea
               className="block w-full rounded-md border-0 px-3.5 py-2  shadow-sm ring-1 ring-inset ring-slate-800 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-md sm:leading-6 dark:bg-slate-900  dark:text-slate-300 dark:ring-slate-700 "
-              placeholder='Message'
+              placeholder='Your Message '
               rows={6}
               required
               {...register('message')}

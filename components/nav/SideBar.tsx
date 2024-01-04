@@ -3,6 +3,7 @@ import styles from "./sidebar.module.scss";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useRouter } from 'next/router';
+import Link from "next/link";
 
 
 export const SideBar = () => {
@@ -46,14 +47,30 @@ export const SideBar = () => {
     sections.forEach((section) => observer.observe(section));
   }, []);
 
+  function handleClickNav({route}){
+    const pathSegments = router.asPath.split('/');
+    console.log(route)
+    if(pathSegments.length ==2) {
+      if(pathSegments[1] !== ''){
+        console.log('inner',`/${route}`)
+        // setSelected(`./${route}`);
+        router.push(`/#${route}`)
+
+      }
+    }else{
+      setSelected(`#${route}`);
+    }
+
+    if(pathSegments.length ==3) {
+      router.push(`/#${route}`)
+    }
+   
+  }
+
   return (
-    <motion.nav
-      initial={{ x: -70 }}
-      animate={{ x: 0 }}
-      transition={{ duration: 0.5 }}
-      className={styles.sideBar}
-    >
+    <div>
       <div className={styles.logo}>
+      <a href="/">
 
       <Image
         className="logo-krishna"
@@ -62,15 +79,21 @@ export const SideBar = () => {
           height={45}
           alt="Picture of the author"
       />
+      </a>
       </div>
+<motion.nav
+      initial={{ x: -70 }}
+      animate={{ x: 0 }}
+      transition={{ duration: 0.5 }}
+      className={styles.sideBar}
+    >
+
       <motion.a
         initial={{ x: -70 }}
         animate={{ x: 0 }}
         transition={{ duration: 0.5, delay: 0.1 }}
         href="#"
-        onClick={() => {
-          setSelected("#");
-        }}
+        onClick={() => handleClickNav({ route: "#" })}
         className={selected === "Home" ? styles.selected : ""}
       >
         Home
@@ -80,9 +103,7 @@ export const SideBar = () => {
         animate={{ x: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
         href="#about"
-        onClick={() => {
-          setSelected("about");
-        }}
+        onClick={() => handleClickNav({ route: "about" })}
         className={selected === "about" ? styles.selected : ""}
       >
         About
@@ -92,7 +113,7 @@ export const SideBar = () => {
         animate={{ x: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
         href="#projects"
-        onClick={() => setSelected("projects")}
+        onClick={() => handleClickNav({ route: "projects" })}
         className={selected === "projects" ? styles.selected : ""}
       >
         Projects
@@ -102,7 +123,7 @@ export const SideBar = () => {
         animate={{ x: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
         href="#Certificate"
-        onClick={() => setSelected("Certificate")}
+        onClick={() => handleClickNav({ route: "certificate" })}
         className={selected === "Certificate" ? styles.selected : ""}
       >
         Certificate
@@ -112,11 +133,13 @@ export const SideBar = () => {
         animate={{ x: 0 }}
         transition={{ duration: 0.5, delay: 0.4 }}
         href="#contact"
-        onClick={() => setSelected("contact")}
+        onClick={() => handleClickNav({ route: "contact" })}
         className={selected === "contact" ? styles.selected : ""}
       >
         Contact
       </motion.a>
     </motion.nav>
+    </div>
+    
   );
 };

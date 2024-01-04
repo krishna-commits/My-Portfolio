@@ -70,7 +70,7 @@ export const SideBar = () => {
   return (
     <div>
       <div className={styles.logo}>
-      <a href="/">
+      <Link href="/">
 
       <Image
         className="logo-krishna"
@@ -79,7 +79,7 @@ export const SideBar = () => {
           height={45}
           alt="Picture of the author"
       />
-      </a>
+      </Link>
       </div>
 <motion.nav
       initial={{ x: -70 }}

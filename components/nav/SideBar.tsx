@@ -69,18 +69,22 @@ export const SideBar = () => {
 
   return (
     <div>
+      
+     
+      <div className="sm:hidden lg:block md:block  justify-center flex">
       <div className={styles.logo}>
-      <Link href="/">
-
-      <Image
-        className="logo-krishna"
-          src="/project-imgs/krishnalogo.png"
-          width={45}
-          height={45}
-          alt="Picture of the author"
-      />
-      </Link>
+        <Link href="/">
+        <Image
+            className="logo-krishna"
+            src="/project-imgs/krishnalogo.png"
+            width={45}
+            height={45}
+            alt="Picture of the author"
+        />
+        </Link>
       </div>
+      </div>
+
 <motion.nav
       initial={{ x: -70 }}
       animate={{ x: 0 }}

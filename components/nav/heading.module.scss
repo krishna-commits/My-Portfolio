@@ -15,6 +15,11 @@
   font-size: var(--text-md);
   font-weight: bold;
 
+  @media only screen and (max-width: 400px) {
+    height: calc(45px );
+  }
+
+
   .mobile {
     transition: 0.9s ease-in-out;
     position: relative;

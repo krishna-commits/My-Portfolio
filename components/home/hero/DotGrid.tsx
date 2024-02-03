@@ -63,28 +63,14 @@ export const DotGrid = () => {
   // }
 
   return (
-    <div
-      // style={{ gridTemplateColumns: `repeat(${GRID_WIDTH}, 1fr)` }}
-      // className={styles.dotGrid}
-    >
-       {/* <Image
-          className={styles.modalImage}
-          src={imgSrc}
-          height={300}
-          width={660}
-          style={{ maxWidth: '100%', height: 'auto' }}
-          alt={`An image of the ${title} project.`}
-        /> */}
-{/* <div style={{ marginLeft: 'auto', width: '50%', height: 600 }}></div> */}
-<Lottie
+    <div className="hidden lg:block ">
+       
+  <Lottie
       loop
       animationData={lottieJSON}
-      play
+      play 
       style={{ marginLeft: 'auto', width: 600, height: 500 }}
     />
-        
-    
-      {/* {dots.map((dot) => dot)} */}
     </div>
   );
 };

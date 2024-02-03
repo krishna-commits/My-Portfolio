@@ -92,8 +92,8 @@ export const Contact = () => {
       <form
         onSubmit={handleSubmit(onSubmit)} // updated code
       >
-        <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
-          <div className="mt-2.5">
+        <div className="grid grid-cols-2 gap-x-8 gap-y-6 ">
+          <div className="mt-2.5 sm:col-span-2 md:col-span-1 lg:col-span-1">
             <label htmlFor="your-name" className="block text-md font-semibold leading-6  dark:text-slate-600 mb-5">
               Your Name
             </label>

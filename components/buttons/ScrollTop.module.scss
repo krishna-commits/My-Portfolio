@@ -19,4 +19,10 @@
     &:hover{
         transform: translateY(-30px);
     }
+    
+    @media only screen and (max-width: 400px) {
+        bottom: 0px;
+        right: 0px;
+
+    }
 }

@@ -67,7 +67,7 @@ export default function ProjectPage() {
                   >
                 <FaGithub size="1.7rem" />
                   </svg>
-                  github
+                  Github
                 </a>
               </li>
               <li className="me-2">
@@ -90,7 +90,7 @@ export default function ProjectPage() {
                   >
                 <FaMedium size="1.7rem" />
                   </svg>
-                  medium
+                  Medium
                 </a>
               </li>
             </ul>

@@ -32,7 +32,7 @@ const GitHubRepos = () => {
             <a href={repo.html_url} target="_blank" rel="noopener noreferrer" className=" flex text-blue-500 hover:text-blue-900">
               <FaGithub/> 
               <span className='text-[1.3rem] ml-2 hover:underline'>
-                View on github
+                View on Github
                 </span>
             </a>
           </div>

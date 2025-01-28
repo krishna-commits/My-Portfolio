@@ -78,7 +78,7 @@ export const Contact = () => {
               </Link>
               | {" "}
               <Link
-                href="https://www.instagram.com/makeajourneywithkrishna/"
+                href="https://www.instagram.com/krishnasoulcode/"
                 target="_blank"
                 rel="nofollow"
               >
